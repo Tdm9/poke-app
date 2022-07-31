@@ -21,8 +21,8 @@ const Favorites: NextPage = () => {
 
 
     return (
-        <Layout title="NextJS PokeDex">
-            <h1 className="text-4xl mb-8 text-center">NextJS Pokedex</h1>
+        <Layout title="Favorite Pokemons">
+            <h1 className="text-4xl mb-8 text-center">Favorite Pokemons</h1>
             <FavList />
         </Layout>
     );

@@ -18,6 +18,7 @@ All the information is provided by the [PokeAPI](https://pokeapi.co/).
 - [x] App is responsive
 - [x] Commented code
 - [x] Code on Github
+
 Extras:
 - [x] Components have basic styling
 - [x] Small animations
