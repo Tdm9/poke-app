@@ -49,7 +49,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm run export
+    - run: npm run start
     
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.1
