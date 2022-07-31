@@ -1,0 +1,10 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/api/trpc/[trpc]": "pages/api/trpc/[trpc].js",
+  "/favorites": "pages/favorites.html",
+  "/": "pages/index.html",
+  "/pokemon/[id]": "pages/pokemon/[id].html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

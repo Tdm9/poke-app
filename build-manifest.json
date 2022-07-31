@@ -1,0 +1,49 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/mdaYDDx0f40wUCn3OxR81/_buildManifest.js",
+    "static/mdaYDDx0f40wUCn3OxR81/_ssgManifest.js"
+  ],
+  "rootMainFiles": [],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-2c644d3580cecc35.js",
+      "static/chunks/framework-90fb9842699698f3.js",
+      "static/chunks/main-a13d6793b2119a52.js",
+      "static/chunks/17-4a7b303422d776f0.js",
+      "static/chunks/pages/index-d4b56d4688d1634b.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-2c644d3580cecc35.js",
+      "static/chunks/framework-90fb9842699698f3.js",
+      "static/chunks/main-a13d6793b2119a52.js",
+      "static/css/e98e33968194b052.css",
+      "static/chunks/pages/_app-d2a85873787ad439.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-2c644d3580cecc35.js",
+      "static/chunks/framework-90fb9842699698f3.js",
+      "static/chunks/main-a13d6793b2119a52.js",
+      "static/chunks/pages/_error-7397496ca01950b1.js"
+    ],
+    "/favorites": [
+      "static/chunks/webpack-2c644d3580cecc35.js",
+      "static/chunks/framework-90fb9842699698f3.js",
+      "static/chunks/main-a13d6793b2119a52.js",
+      "static/chunks/17-4a7b303422d776f0.js",
+      "static/chunks/pages/favorites-034cd3c4aee24ba0.js"
+    ],
+    "/pokemon/[id]": [
+      "static/chunks/webpack-2c644d3580cecc35.js",
+      "static/chunks/framework-90fb9842699698f3.js",
+      "static/chunks/main-a13d6793b2119a52.js",
+      "static/chunks/17-4a7b303422d776f0.js",
+      "static/chunks/pages/pokemon/[id]-0f7fecedf2cf3e11.js"
+    ]
+  },
+  "ampFirstPages": []
+}
