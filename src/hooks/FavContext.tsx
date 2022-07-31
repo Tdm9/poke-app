@@ -1,12 +1,19 @@
-import React, {useCallback, useContext, useEffect} from "react";
+import React, {Component, ReactNode, useCallback, useContext, useEffect} from "react";
 import useLocalStorage from "use-local-storage";
 import {PokemonItem} from "../server/router/pokeRouter";
 
-const FavContext = React.createContext([]);
+export type FavContextType = {
+    favoritePokemon: PokemonItem[];
+    addFavorite: (val: PokemonItem) => void;
+    removeFavorite: (id: number) => void;
+}
+
+const FavContext: React.Context<FavContextType> = React.createContext({} as FavContextType);
+
 
 // provides the list of favorite pokemons to the entire application (not only to the Favorites page)
 // and also provides the methods to add/remove a pokemon to/from the list
-export const FavProvider=({ children }) => {
+export const FavProvider=({ children }: {children:ReactNode}) => {
     const [favoritePokemon, setFavoritePokemon] = useLocalStorage<PokemonItem[]>('favoritePokemon', [] as PokemonItem[]);
 
     // adds new pokemon to the localstorage list of favorite pokemons

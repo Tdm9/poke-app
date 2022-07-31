@@ -12,7 +12,8 @@ export default function useFavoritePokemon<PokemonItem>() {
             if (!favoritePokemon) {
                 return setFavoritePokemon([val]);
             }
-            if (favoritePokemon.find(pokemon => pokemon?.id === val.id)) {
+            // @ts-ignore
+            if (favoritePokemon.find((pokemon:PokemonItem) => pokemon.id === val.id)) {
             }
             setFavoritePokemon([...favoritePokemon, val]);
         } catch (error) {
@@ -25,6 +26,7 @@ export default function useFavoritePokemon<PokemonItem>() {
             if (!favoritePokemon) {
                 return console.error('No favorite pokemon. Impossible to remove.');
             }
+            // @ts-ignore
             const filteredPokemons: PokemonItem[] = favoritePokemon.filter(pokemon => pokemon?.id !== id);
 
             setFavoritePokemon([...filteredPokemons]);

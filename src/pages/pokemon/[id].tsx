@@ -6,6 +6,7 @@ import React, {memo, useEffect, useMemo} from "react";
 import {MainPokemonInfo} from "../../components/MainPokemonInfo";
 import {CombatStats} from "../../components/CombatStats";
 import {FavoriteStar} from "../../components/FavoriteStar";
+import Image from "next/image";
 
 // displays the details of a pokemon in a card format
 // these details include the pokemon's name, type, abilities, weight, height, image, stats, and a button to add it to the favorites
@@ -30,13 +31,16 @@ const PokemonDetails = ({}) => {
         <Layout title={pokemon?.data?.name!!}>
             <div className="card lg:w-2/3 w-screen bg-base-100 shadow-xl lg:left-[18%]">
                 <figure>
-                    <img className="mx-auto" src={pokemon?.data?.sprites.front_default} alt={pokemon?.data?.name}/>
+                    <Image className="w-20 h-20 mr-3" src={pokemon?.data?.sprites?.front_default!!} alt={pokemon?.data?.name}
+                           width={270}
+                           height={270}
+                    />
                 </figure>
                 <div className="card-title justify-center">
                     <h3 className="text-4xl mb-2 text-center capitalize">
                         {pokemon?.data?.name}
                     </h3>
-                    <FavoriteStar pokemon={pokemon?.data}/>
+                    <FavoriteStar pokemon={pokemon?.data!!}/>
 
                 </div>
                 <div className="card-body">

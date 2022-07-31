@@ -18,10 +18,10 @@ export function FavoriteStar({pokemon}: { pokemon: PokeAPI.Pokemon }) {
     const {favoritePokemon, addFavorite, removeFavorite} = useFavs();
 
     // checks if the pokemon is already in the list of favorite pokemons to determine if the star should be filled or not
-    const isFavorite = useMemo(() => favoritePokemon.find(pok => pok.id === pokemon?.id), [favoritePokemon, pokemon]);
+    const isFavorite = useMemo(() => favoritePokemon.find((pok: PokemonItem) => pok.id === pokemon?.id), [favoritePokemon, pokemon]);
 
     return <label className="swap swap-flip">
-        <input type="checkbox" checked={isFavorite} onClick={() => {
+        <input type="checkbox" checked={Boolean(isFavorite)} onClick={() => {
             if (isFavorite) {
                 removeFavorite(pokemon.id);
             } else {
