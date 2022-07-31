@@ -5,6 +5,7 @@ import Image from "next/image";
 
 // displays a small card-like preview of a pokemon with its name, id and image
 export function PokemonPreview({pokemon: {id, image, name}}: { pokemon: PokemonItem }) {
+
     return <Link href={`/pokemon/${id}`}>
         <a className="border p-4 border-grey my-2 hover:shadow-md capitalize flex items-center bg-gray-200 rounded-md">
             <Image src={image}
