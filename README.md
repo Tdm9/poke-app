@@ -36,6 +36,6 @@ Extras:
 # How To Run:
 - Intall Node.js(v16) and npm in your computer
 - Install the dependencies:
-    - npm install
+    - npm install --legacy-peer-deps
 - Run the app:
   - npm run dev
